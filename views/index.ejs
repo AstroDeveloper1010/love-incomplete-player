@@ -1,28 +1,14 @@
 <%- include('partials/header') %>
 
-    <!-- home section start -->
-    <section class="home-section">
-        <!-- carousel -->
-        <div class="carousel">
-            <img src="../assets/images/cover/cover 1.png" class="active" alt="">
-            <img src="../assets/images/cover/cover 2.png" alt="">
-            <img src="../assets/images/cover/cover 3.png" alt="">
-            <img src="../assets/images/cover/cover 4.png" alt="">
-            <img src="../assets/images/cover/cover 5.png" alt="">
-            <img src="../assets/images/cover/cover 6.png" alt="">
-        </div>
-    </section>
-    <!-- home section end -->
-
     <!-- nav bar -->
     <nav class="Nunito">
         <ul>
             <li><img src="../assets/images/song_images/logo.png" alt="logo" class="logo" /></li>
             <li>Home</li>
             <li>About</li>
-            <li class="info">Please double click if single click don't work</li>
         </ul>
     </nav>
+
     <!-- song section -->
     <div class="songSection Ubuntu">
         <!-- song 1 -->
@@ -30,7 +16,7 @@
             <img src="../assets/images/song_images/arcade.png" alt="arcade" class="imgRound" />
             <p>Arcade</p>
             <button class="s1 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p1" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
         <!-- song 2 -->
@@ -39,7 +25,7 @@
                 class="imgRound" />
             <p>Can we kiss forever</p>
             <button class="s2 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p2" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
         <!-- song 3 -->
@@ -47,7 +33,7 @@
             <img src="../assets/images/song_images/faded.png" alt="faded" class="imgRound" />
             <p>Faded</p>
             <button class="s3 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p3" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
         <!-- song 4 -->
@@ -55,7 +41,7 @@
             <img src="../assets/images/song_images/let me love you.png" alt="let me love you" class="imgRound" />
             <p>Let me love you</p>
             <button class="s4 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p4" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
         <!-- song 5 -->
@@ -63,7 +49,7 @@
             <img src="../assets/images/song_images/night changes.png" alt="night changes" class="imgRound">
             <p>Night Changes</p>
             <button class="s5 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p5" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
         <!-- song 6 -->
@@ -71,17 +57,34 @@
             <img src="../assets/images/song_images/sia.png" alt="sia unstoppable" class="imgRound" />
             <p>Sia Unstoppable</p>
             <button class="s6 playSongButton">
-                <img src="../assets/images/song_images/play.png" alt="play" class="playSong p6" />
+                <i class="fa fas fab fa-play"></i>
             </button>
         </div>
     </div>
-    <!-- buttons and range input -->
-    <div class="buttons">
-        <input type="range" name="" id="range" />
-        <div class="btn">
-            <img src="../assets/images/song_images/previous.png" alt="previous" />
-            <img src="../assets/images/song_images/play.png" alt="play" />
-            <img src="../assets/images/song_images/next.png" alt="next" />
+
+    <div class="container buttons">
+        <section class="home-section">
+            <!-- carousel -->
+            <div class="carousel">
+                <img src="../assets/images/cover/cover 1.png" class="active" alt="">
+                <img src="../assets/images/cover/cover 2.png" alt="">
+                <img src="../assets/images/cover/cover 3.png" alt="">
+                <img src="../assets/images/cover/cover 4.png" alt="">
+                <img src="../assets/images/cover/cover 5.png" alt="">
+                <img src="../assets/images/cover/cover 6.png" alt="">
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-12">
+                <input type="range" name="" id="range" class="w-100">
+            </div>
+            <div class="col-12 mt-3">
+                <div class="btn d-flex justify-content-between">
+                    <img src="../assets/images/song_images/previous.png" alt="previous" />
+                    <img src="../assets/images/song_images/play.png" alt="play" />
+                    <img src="../assets/images/song_images/next.png" alt="next" />
+                </div>
+            </div>
         </div>
     </div>
 

@@ -9,12 +9,8 @@ body {
   box-sizing: border-box;
 }
 
-nav {
-  /* background-color: aqua; */
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  /* width: 100vw; */
+img {
+  object-fit: cover;
 }
 
 nav ul {
@@ -35,24 +31,13 @@ nav ul li {
   cursor: pointer;
 }
 
-nav ul li:hover {
-  /* color: white; */
-  text-decoration: underline;
-  text-decoration-color: white;
-}
-
 .logo {
   width: 9rem;
   padding-top: 6px;
 }
 
-.info {
-  color: red;
-  background-color: yellow;
-}
-
 .songSection {
-  background: url(/images/cover1.jpg);
+  background: url("../images/cover1.jpg");
   color: white;
   display: flex;
   flex-direction: column;
@@ -75,8 +60,6 @@ nav ul li:hover {
 }
 
 .song img {
-  /* border: 1px solid white; */
-  /* border-radius: 90px;  */
   width: 4rem;
 }
 
@@ -86,10 +69,48 @@ nav ul li:hover {
   border-radius: 90px;
 }
 
+.home-section {
+  width: 50vw;
+  padding: 20px;
+  margin: auto;
+  padding-bottom: 100px;
+  overflow-y: auto;
+}
+
+.carousel {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: 1s;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
 .playSong {
   background-color: white;
   border-radius: 4rem;
   cursor: pointer;
+}
+
+.playSongButton {
+  width: 12vh;
+  scale: 1.2;
+  /* height: fit-content; */
+  background-color: transparent;
+  border: none;
 }
 
 .pauseSong {
@@ -101,15 +122,13 @@ nav ul li:hover {
 
 .buttons {
   background-color: rgb(241, 229, 229);
-  height: 5.8rem;
+  height: fit-content;
   width: 62.5vw;
   margin: auto auto;
 }
 
 .buttons input {
   width: 60vw;
-  /* margin: auto auto; */
-  /* padding-left: 1rem; */
   margin-left: 12px;
 }
 
