@@ -1,5 +1,5 @@
 {
-  "name": "meena_player",
+  "name": "love_incomplete_player",
   "version": "1.0.0",
   "description": "This is a music player app.",
   "main": "server.js",
