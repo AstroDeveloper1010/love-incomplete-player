@@ -13,6 +13,10 @@ img {
   object-fit: cover;
 }
 
+button {
+  cursor: pointer;
+}
+
 nav ul {
   background-color: black;
   color: white;
@@ -99,7 +103,8 @@ nav ul li {
   opacity: 1;
 }
 
-.playSong {
+.playSong,
+.pauseSong {
   background-color: white;
   border-radius: 4rem;
   cursor: pointer;
@@ -108,23 +113,21 @@ nav ul li {
 .playSongButton {
   width: 12vh;
   scale: 1.2;
-  /* height: fit-content; */
   background-color: transparent;
   border: none;
 }
 
-.pauseSong {
-  width: 4rem;
-  background-color: white;
-  border-radius: 4rem;
-  cursor: pointer;
-}
-
 .buttons {
-  background-color: rgb(241, 229, 229);
+  background: url("../assets/images/cover/bg.png") no-repeat;
+  background-size: contain;
   height: fit-content;
   width: 62.5vw;
-  margin: auto auto;
+  margin: auto;
+}
+
+.btn_div {
+  background-color: white;
+  width: 96% !important;
 }
 
 .buttons input {
